@@ -59,18 +59,25 @@ const Index = () => {
       {/* Hero Section */}
       <main className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] text-center px-6">
         <div className="animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-oswald tracking-widest">
+          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-oswald tracking-widest glitch-effect">
             LOWEST POINT
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto font-light">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto font-light typing-animation">
             Ты не на дне. Ты глубже.
           </p>
 
-          <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 text-lg font-medium rounded-none border-none transition-all duration-300 transform hover:scale-105">
-            <Icon name="Play" className="w-5 h-5 mr-3" />
-            Открыть трейлер
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 text-lg font-medium rounded-none border-none transition-all duration-300 transform hover:scale-105 pulse-glow">
+              <Icon name="Play" className="w-5 h-5 mr-3" />
+              Открыть трейлер
+            </Button>
+
+            <Button className="bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-gray-900 px-8 py-4 text-lg font-medium rounded-none transition-all duration-300 transform hover:scale-105">
+              <Icon name="Download" className="w-5 h-5 mr-3" />
+              Демо версия
+            </Button>
+          </div>
         </div>
 
         {/* Scroll Indicator */}

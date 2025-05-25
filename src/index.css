@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -97,5 +99,22 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .glitch-effect:hover {
+    animation: glitch 0.3s ease-in-out;
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end) 1s forwards;
+    width: 0;
   }
 }
